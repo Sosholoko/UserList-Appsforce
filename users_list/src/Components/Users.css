@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(176, 194, 192);
+
+}
+
+.user{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    height: 250px;
+    width: 490px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 1px 5px 20px 7px #000000; 
+    box-shadow: 1px 5px 20px 7px #00000096;
+    animation: transform 1s;
+    transition: 1s;
+}
+
+.user:hover{
+    transform: scale(1.1);
+}
+
+.user img{
+    float: left;
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 50%;
+    margin-left: 0px;
+}
+
+.user button{
+    border: none;
+    border-radius: 10px;
+    color: black;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    -webkit-box-shadow: 1px 5px 20px 7px #000000; 
+    box-shadow: 1px 5px 20px 7px #0000001f;
+}
+
+.info__user{
+    /* border: 1px solid black; */
+    width: 250px;
+}
+
+#name__user, #lname__user, #count__user, #city__user, #id__user, #mail__user{
+    font-weight: bolder;
+}
+
+#name__user, #lname__user{
+    font-size: 20px;
+}
