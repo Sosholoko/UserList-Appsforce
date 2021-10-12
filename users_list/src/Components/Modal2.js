@@ -21,8 +21,17 @@ export default function Modal(props){
             props.changeValue(name, lname, email, location);
             toggleModal()
         }
+        else if(name.length < 3){
+            alert(" ⚠︎ The name you used isn't long enough, you need at least 3 characters. ")
+        }
+        else if(email.includes('@') == false){
+            alert(" ⚠︎ The email you used isn't valid, please try again.")
+        }
+        else if(location.length < 1){
+            alert("⚠︎ A field is missing, please try again.")
+        }
         else{
-            alert("Something went wrong, please verify the fields !")
+            alert("⚠︎ Something went wrong, please verify the fields !")
             toggleModal()
         }
         

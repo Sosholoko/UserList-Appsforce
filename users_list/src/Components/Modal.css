@@ -12,6 +12,7 @@ body.active-modal {
 .btn__modal:hover{
     background-color: rgb(218, 82, 82);
     color: white;
+    cursor: pointer;
 }
 
 .modal, .overlay {

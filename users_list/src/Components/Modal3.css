@@ -2,13 +2,6 @@ body.active-modal {
     overflow-y: hidden;
 }
 
-/* .btn-modal {
-    padding: 10px 20px;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
-} */
-
 .btn-modal3{
     border: 1px solid white;
     padding: 5px;
@@ -83,4 +76,16 @@ body.active-modal {
     color: black;
     -webkit-box-shadow: 1px 5px 20px 7px #000000; 
     box-shadow: 1px 5px 20px 7px #0000002a;
+}
+
+#yes__btn:hover{
+    cursor: pointer;
+    background-color: rgb(55, 129, 179);
+    color: white;
+}
+
+#no__btn:hover{
+    cursor: pointer;
+    background-color: rgb(216, 111, 92);
+    color: white;
 }

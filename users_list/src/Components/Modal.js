@@ -28,5 +28,3 @@ export default function Modal(props){
         </>
     )
 }
-
-// onClick={()=> {props.test(); toggleModal();}}
