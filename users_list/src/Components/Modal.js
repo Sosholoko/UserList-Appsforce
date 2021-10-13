@@ -20,7 +20,7 @@ export default function Modal(props){
                 <div className="overlay"> </div>
                     <div className='modal-content'>
                         <h3>Do you want to delete the user <br/> {props.name} {props.lname} ?</h3>
-                        <button id='yes__btn' onClick={props.test}>Yes</button><button id='no__btn' className='close__modal'onClick={toggleModal}>No</button>
+                        <button id='yes__btn' onClick={props.del}>Yes</button><button id='no__btn' className='close__modal'onClick={toggleModal}>No</button>
                     </div>
             </div>
             )}

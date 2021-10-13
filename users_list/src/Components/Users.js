@@ -23,7 +23,7 @@
         })
         }
 
-        test(index){
+        del(index){
             var user = this.state.person;
             delete user[index];
             this.setState({person : user});
@@ -66,7 +66,7 @@
                         <>
                         <div className='user' key={i}>
 
-                            <Modal test = {()=>{this.test(i)}} idname={persons.name.first} name={persons.name.first} lname={persons.name.last}/>
+                            <Modal del = {()=>{this.del(i)}} idname={persons.name.first} name={persons.name.first} lname={persons.name.last}/>
                             {/* <button onClick={()=>{this.test(i)}}>X</button> */}
                             <Modal2 name={persons.name.first} lname={persons.name.last} changeValue={(name, lname, email, location) => {this.changeValue(i, name, lname, email, location)}}/>
 
@@ -74,7 +74,6 @@
                                 <p id='name__user'>{persons.name.title} {persons.name.last}</p>
                                 <p id='lname__user'>{persons.name.first}</p>
                                 <p id='mail__user'>{persons.email}</p>
-                                {/* <p><span id='count__user'>Country</span>: {persons.location.country}</p> */}
                                 <p><span id='city__user'>City</span>: {persons.location.city}</p>
                                 <p><span id='id__user'>ID</span>: {persons.login.password}</p>
                             </div>
